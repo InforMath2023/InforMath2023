@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calculadora de IMC</title>
+</head>
+
+<!--Caixa-->
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="image/undraw_fitness_stats_sht6.svg">
+        </section>
+        <header class="header">
+            <a href="/pagina inicial/index.html" class="logo">InforMath</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+    
+            <nav class="navbar">
+                <a href="/pagina inicial/index.html" class="active">Home</a>
+                <a href="/Teorema Pitagoras/index.html">Teorema de Pitágoras</a>
+                <a href="/IMC/SITE/index.html">IMC</a>
+                <a href="/conversor/Meu Projeto/assets/projeto/index.html">Conversor De Temperatura</a>
+                <a href="/Juros/index.html">Juros Compostos</a>
+                <a href="/Equacao/index.html">Bhaskara</a>
+            </nav>
+        </header>
+        
+        <!--Informações-->
+        <section id="calculator">
+            <form id="form"> 
+                <h1 id="title"><!--Titulo-->
+                    Calculadora - IMC
+                </h1>
+
+                <!--Fórmulario-->
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em kg
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging" style="color: #6c63ff;"></i> 
+                        <input type="number" id="weight" name="weight" required>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div> 
+
+                <div class="input-box">
+                    <label for="height">
+                        Altura em m
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler" style="color: #6c63ff;"></i> 
+                        <input type="number" step="0.01" id="height" name="height" required>
+                        <span>
+                            M
+                        </span>
+                    </div>
+                </div> 
+
+                <!--Botão de execução-->
+                <button id="calculate">
+                    Calcular
+                </button>
+            </form> 
+
+            <!--Resultado-->
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    
+                    <!--Descrição-->
+                    <div id="description">  
+                        <span></span>
+                    </div>
+                </div>
+
+                <!--Mais informações sobre-->
+                <div id="more_info">
+                    <a href="https://centrodeobesidadeediabetes.org.br/tudo-sobre-obesidade/calculadora-de-imc/#:~:text=%C3%89%20calculado%20dividindo%20o%20peso,ao%20quadrado%20(em%20metros).">
+                        Mais informações sobre o IMC
+                        <i class="fa-solid fa-link" style="color: #6c63ff;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script> <!--Ligando o HTML ao JavaScript-->
+</body>
+</html>

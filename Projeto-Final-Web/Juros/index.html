@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/imgs/percent.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Juros Compostos</title>
+</head>
+<body background="./assets/imgs/fundo.png">
+    <main id="container">
+        <header class="header">
+            <a href="/pagina inicial/index.html" class="logo">InforMath</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+    
+            <nav class="navbar">
+                <a href="/pagina inicial/index.html" class="active">Home</a>
+                <a href="/Teorema Pitagoras/index.html">Teorema de Pitágoras</a>
+                <a href="/IMC/SITE/index.html">IMC</a>
+                <a href="/conversor/Meu Projeto/assets/projeto/index.html">Conversor De Temperatura</a>
+                <a href="/Juros/index.html">Juros Compostos</a>
+                <a href="/Equacao/index.html">Bhaskara</a>
+            </nav>
+        </header>
+        <div id="calculator">
+
+            <div class="text">
+                <h2>O que são juros compostos?</h2>
+                <br>
+                <p>Os juros compostos são também conhecidos como “juros sobre juros”. Nessa modalidade, os rendimentos – ou a dívida – são calculados não apenas a partir do capital investido ou emprestado inicialmente, como acontece com os juros simples, mas também sobre os ganhos de todos os períodos anteriores.</p>
+                <br>
+                <h2>Qual fórmula posso usar?</h2>
+                <br>
+                    <h3>M = C x (1+i)^t</h3>
+                    <br>
+                    M = montante (resultado)<br>
+                    C = capital inicial<br>
+                    i = taxa de juros aplicada<br>
+                    t = tempo (duração do investimento)<br>
+                </p>
+                <br>
+              </div>
+          
+            <h2>
+                Calculadora de Juros Compostos
+            </h2>
+
+            <div id="input_box">
+                <div class="input-field">
+                    <label for="value">Valor Inicial (capital):</label>
+                    <input type="number" id="value">
+                </div>
+
+                <div class="input-field">
+                    <label for="fee">Taxa de Juros (Mensal):</label>
+                    <input type="number" id="fee">
+                </div>
+
+                <div class="input-field">
+                    <label for="time">Tempo de Rendimento(meses):</label>
+                    <input type="number" id="time">
+                </div>
+            </div>
+
+            <div id="result">
+                <h4>Resultado:</h4>
+                <span id="total">
+                    R$ 0,00
+                </span>
+            </div>
+
+            <button id="calculate">
+                Calcular
+            </button>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação do Segundo Grau</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body background="./assets/imgs/fundo.png">
+    <main id="container">
+        <header class="header">
+            <a href="/pagina inicial/index.html" class="logo">InforMath</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+    
+            <nav class="navbar">
+                <a href="/pagina inicial/index.html" class="active">Home</a>
+                <a href="/Teorema Pitagoras/index.html">Teorema de Pitágoras</a>
+                <a href="/IMC/SITE/index.html">IMC</a>
+                <a href="/conversor/Meu Projeto/assets/projeto/index.html">Conversor De Temperatura</a>
+                <a href="/Juros/index.html">Juros Compostos</a>
+                <a href="/Equacao/index.html">Bhaskara</a>
+            </nav>
+        </header>
+        <div id="calculator">
+            <div class="text">
+                <h2>O que é equação de segundo grau?</h2>
+                <br>
+                <p>Uma equação do 2° grau é toda e qualquer equação com uma incógnita que é expressa da seguinte forma:<br>
+
+                    <h3>ax2 + bx + c = 0, a ≠ 0 </h3><br>
+                    
+                    A letra x é a incógnita, e as letras a, b e c são números reais que exercem a função de coeficientes da equação. Apenas o coeficiente a deve ser diferente de zero. Se nenhum dos coeficientes for nulo, dizemos que se trata de uma equação completa; mas se algum dos coeficientes b e c for zero, dizemos que é uma equação incompleta.</p>
+                <br>
+                <h2>Qual fórmula posso usar?</h2>
+                <br>
+                <h3>-b±√Δ/(2a) <br>
+                    Δ = b2 – 4ac</h3>
+                    <br>
+                    a = número que multiplica x2 <br>
+                    b = número que multiplica x <br>
+                    c = número que não multiplica incógnita
+                </p>
+                <br>
+              </div>
+          
+            <h2>
+                Calculadora Equção segundo grau
+            </h2>
+            <div id="input_box">
+                <div class="input-field">
+                    <label for="value">Valor de A:</label>
+                    <input type="number" name="num1" id="num1">
+                </div>
+                <div class="input-field">
+                    <label for="value">Valor de B:</label>
+                    <input type="number" name="num2" id="num2">
+                </div>
+                <div class="input-field">
+                    <label for="value">Valor de C:</label>                
+                    <input type="number" name="num3" id="num3">
+                </div>
+                <div id="result">
+                    <h4>Resultado: </h4>
+                </div>
+                <span id="total"></span>
+                    <button id="calculate">Calcular</button>
+            </div>
+    </main>
+ 
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

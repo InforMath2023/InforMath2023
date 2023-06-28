@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teorema de Pitágoras</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body background="img/Untitled.png">
+  <header class="header">
+    <a href="/pagina inicial/index.html" class="logo">InforMath</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="/pagina inicial/index.html" class="active">Home</a>
+        <a href="/Teorema Pitagoras/index.html">Teorema de Pitágoras</a>
+        <a href="/IMC/SITE/index.html">IMC</a>
+        <a href="/conversor/Meu Projeto/assets/projeto/index.html">Conversor De Temperatura</a>
+        <a href="/Juros/index.html">Juros Compostos</a>
+        <a href="/Equacao/index.html">Bhaskara</a>
+    </nav>
+</header>
+
+  <div class="container">
+
+    <div class="texto">
+      <h1>Teorema de Pitágoras</h1>
+      <p>O teorema de Pitágoras é uma relação entre as medidas dos lados de um triângulo retângulo. De acordo com esse teorema, o quadrado da medida da hipotenusa é igual à soma dos quadrados das medidas dos catetos. Ou seja, se os catetos medem a e b e a hipotenusa mede c, então c2=a2+b2."</p>
+      <br>
+      <p>"Podemos utilizar essa relação para obter a medida de um dos lados do triângulo retângulo, supondo que os outros dois sejam conhecidos. Ainda que tal aplicação seja simples, o teorema de Pitágoras é um recurso fundamental em diversos campos da Matemática, sendo amplamente estudado durante séculos."
+        <br>
+      </p>
+  
+
+    <h1>Calcule os Lados</h1>
+    <label for="sideA">Lado A:</label>
+    <input type="number" id="sideA">
+
+    <label for="sideB">Lado B:</label>
+    <input type="number" id="sideB">
+
+    <button onclick="calculate()">Calcular</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <div id="more-info">
+    <a href="https://brasilescola.uol.com.br/o-que-e/matematica/o-que-e-teorema-de-pitagoras.htm">
+     Mais Informações sobre Teorema de Pitágoras</a>
+   </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
